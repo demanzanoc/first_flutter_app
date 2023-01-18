@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        leading: Builder(
+        /*leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
               icon: const Icon(Icons.arrow_back),
@@ -54,9 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
               tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             );
           },
-        ),
+        ),*/
       ),
-      body: Center(
+      body: DescriptionPlace()
+      /*Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -74,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ),
+      ),*/
     );
   }
 }
