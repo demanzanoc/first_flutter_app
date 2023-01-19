@@ -11,6 +11,21 @@ class Review extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Container buildStar(IconData icon) {
+      return Container(
+        margin: const EdgeInsets.only(top: 3.0, right: 1.5, left: 1.5),
+        child: Icon(
+          icon,
+          color: Colors.amber,
+          size: 15.0,
+        ),
+      );
+    }
+
+    final star = buildStar(Icons.star);
+    final starHalf = buildStar(Icons.star_half);
+    final starBorder = buildStar(Icons.star_border);
+
     Container buildUserData(String info, double fontSize, Color textColor) {
       return Container(
         margin: const EdgeInsets.only(
@@ -33,7 +48,16 @@ class Review extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         userName,
-        userInfo,
+        Row(
+          children: [
+            userInfo,
+            star,
+            star,
+            star,
+            star,
+            starHalf,
+          ],
+        ),
         userComment,
       ],
     );
