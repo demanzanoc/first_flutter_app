@@ -1,4 +1,5 @@
 import 'package:first_flutter_app/platzi_trips.dart';
+import 'package:first_flutter_app/platzi_trips_cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.indigo,
       ),
-      home: const PlatziTrips(),
+      home: const PlatziTripsCupertino(),
     );
   }
 }

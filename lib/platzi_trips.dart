@@ -34,7 +34,7 @@ class _PlatziTrips extends State<PlatziTrips> {
       bottomNavigationBar: BottomNavigationBar(
         onTap: onItemTap,
         currentIndex: indexItem,
-        selectedItemColor: Colors.purple,
+        selectedItemColor: Colors.indigo,
         unselectedItemColor: Colors.blueGrey,
         items: const [
           BottomNavigationBarItem(
